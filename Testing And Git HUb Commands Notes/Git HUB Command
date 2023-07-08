@@ -1,0 +1,54 @@
+[Branching concept]
+
+Existing Project------
+
+For Get Code from Central System
+
+Select folder and And right click and go to GIT Bash here
+cmd prompt will open then type
+
+Git clone {github project "url"}(Url Found from Git HUB site) press enter
+
+code will come out form central repostery in local machine.
+
+after that import from that folder to 
+
+Note Work Should B never Started With Main (Master)Branch
+to check branch 
+Git branch press enter
+
+
+
+Ist day
+[Git Pull --latest code pull in local system]
+ 
+[Git checkout -b xyz scenario ] 
+After completed the work we will give PR (Pull Request / merge request)
+it should be sent to lead or Reviewer
+
+How to Raise (PR)
+
+2ed day
+[Git Pull --latest code pull in local system]
+ 
+[Git checkout -b Abc scenario ] 
+After completed the work we will give PR (Pull Request / merge request)
+it should be sent to lead or Reviewer
+
+
+Git Status {For changes in code and path}
+Git add {stagging area}
+Git diff {Comparing With Master Branch}
+Git commit -m "{any Work Related comments }"
+Git push {move code from  local repo to central repo }
+Git Stash {}
+
+ New Project----------------
+ 
+how to create replica or feature branch 
+ 
+Git Checkout -b BranchName
+and check git status
+ 
+ 
+ 
