@@ -16,16 +16,26 @@ after that import from that folder to
 Note Work Should B never Started With Main (Master)Branch
 to check branch 
 Git branch press enter
-
+[Ist time clone download and reset { git remote add <origin https://github.com/girishmanocha/Fresh.git> ]
 
 
 Ist day
-[Git Pull --latest code pull in local system]
+1[Git Pull --latest code pull in local system]
  
-[Git checkout -b xyz scenario ] 
-After completed the work we will give PR (Pull Request / merge request)
-it should be sent to lead or Reviewer
+2[Git checkout -b xyz scenario ] 
+ After completed the work we will give PR (Pull Request / merge request)
+ it should be sent to lead or Reviewer
 
+3 [git status]
+4 [git add .]
+5 [git commit -m"name"]
+6 [git push <url> //if git remote  is not added URl is not used]
+
+
+for Ist Time 
+Git add remote add < git project url > 
+Git commit -m"First"
+Git push 
 How to Raise (PR)
 
 2ed day
