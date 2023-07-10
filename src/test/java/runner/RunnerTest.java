@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features", plugin = { "pretty", "html:target/TestReport/testDDMMYY.html",
 		 "json:target/json/file.json",
-		 }, glue = { "step_Defination", "base" }, tags = "@Regrassion" )
+		 }, glue = { "step_Defination", "base" }, tags = "@Regrassion " )
 
 public class RunnerTest {
 
