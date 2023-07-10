@@ -1,6 +1,6 @@
 Feature: Add to Cart 
 
-@Regrassion 
+@Regrassion  
 Scenario: Add To cart from Product Listing Page 
 
 	

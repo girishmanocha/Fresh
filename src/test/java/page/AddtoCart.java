@@ -14,20 +14,15 @@ public class AddtoCart extends Base {
 
 	public void add_two_products_in_basket() {
 		WebElement add1product = driver.findElement(By.xpath(
-				"//*[@id=\"root\"]/main/div[4]/article/section/div/div/div[2]/form/section[2]/div/div/button[2]"));
-		add1product.click();
-		WebElement clkaddtobasket = driver.findElement(
-				By.xpath("//*[@id=\"root\"]/main/div[4]/article/section/div/div/div[2]/form/section[2]/button/span"));
-		waitforElementClickable(clkaddtobasket, 15);
-
+				"//*[@id=\"root\"]/main/div[2]/article/section/div/div/div[1]/form/section[2]/button"));
 		try {
-			clkaddtobasket.click();
-
+			add1product.click();
 		} catch (Exception e) {
-			Executerclick(clkaddtobasket);
-		}
+			Executerclick(add1product);
+		} 
+		
 		WebElement Add2product = driver.findElement(
-				By.xpath("//*[@id=\"root\"]/main/div[4]/article/section/div/div/div[3]/form/section[2]/button"));
+				By.xpath("//*[@id=\"root\"]/main/div[2]/article/section/div/div/div[2]/form/section[2]/button"));
 		try {
 			Add2product.click();
 
@@ -43,12 +38,12 @@ public class AddtoCart extends Base {
 		CLKBASKETBUSKETBUTTON.click();
 		waitforexpectedelement(CLKBASKETBUSKETBUTTON, 10);
 		WebElement delete1product = driver.findElement(
-				By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside[2]/div/div[3]/div[1]/div[1]/button"));
+				By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside/div/div[3]/div[1]/div[2]/button"));
 		waitforElementClickable(delete1product, 10);
 		delete1product.click();
 
 		WebElement delete2product = driver.findElement(
-				By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside[2]/div/div[3]/div[1]/div[2]/button"));
+				By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside/div/div[3]/div[1]/div[3]/button"));
 		waitforElementClickable(delete2product, 10);
 		delete2product.click();
 	}
@@ -66,7 +61,7 @@ public class AddtoCart extends Base {
 
 	public void select_a_product() {
 		WebElement selctproduct = driver.findElement(
-				By.xpath("//*[@id=\"root\"]/main/div[4]/article/section/div/div/div[1]/form/a/div/img[1]"));
+				By.xpath("//*[@id=\"root\"]/main/div[2]/article/section/div/div/div[1]/form/a/div/img[2]"));
 		try {
 			selctproduct.click();
 
@@ -78,7 +73,7 @@ public class AddtoCart extends Base {
 
 	public void add_product_from_product_discription_page() {
 		WebElement AddQty = driver
-				.findElement(By.xpath("//*[@id=\"root\"]/main/div[4]/form/div[2]/section[1]/div/button[2]"));
+				.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/form/div[2]/section[1]/div/button[2]"));
 		try {
 			AddQty.click();
 		} catch (Exception e) {
@@ -86,7 +81,7 @@ public class AddtoCart extends Base {
 		}
 
 		WebElement addinbasket = driver
-				.findElement(By.xpath("//*[@id=\"root\"]/main/div[4]/form/div[2]/section[2]/button"));
+				.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/form/div[2]/section[2]/button"));
 		try {
 			Executerclick(addinbasket);
 		} catch (Exception e) {
@@ -102,7 +97,7 @@ public class AddtoCart extends Base {
 		Executerclick(CLKBASKETBUSKETBUTTON);
 
 		WebElement verifyobject = driver
-				.findElement(By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside[2]/div/div[3]/div[1]/div[2]/a[2]"));
+				.findElement(By.xpath("//*[@id=\"header-navBar\"]/div/div[2]/aside/div/div[2]/span[2]"));
 		validation(true, verifyobject);
 
 		driver.quit();

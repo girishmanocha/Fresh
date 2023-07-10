@@ -25,7 +25,7 @@ public class Hooks extends Base {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.get(prop.getProperty("Url")); 
+			driver.get(prop.getProperty("Url"));
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -62,17 +62,13 @@ public class Hooks extends Base {
 			Executerclick(Acptcoockies);
 		}
 
-		WebElement over18 = driver.findElement(
-				By.xpath("(//button[@class='button-root_highPriority-3u6 button-root-16x clickable-root-2gB'])[16]"));
-
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-
+		WebElement Iam18 = driver.findElement(By.xpath("//div[@class='dialog-buttonWrap-3xa']/button[2]"));
 		try {
-			over18.click();
-		} catch (Exception e) {
-			Executerclick(over18);
-		}
+			Iam18.click();
 
+		} catch (Exception e) {
+			Executerclick(Iam18);
+		}
 	}
 
 	@After
